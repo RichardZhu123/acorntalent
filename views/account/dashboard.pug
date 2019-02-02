@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+
+  h1 Tests
+  p.lead View saved and in-progress.
+  hr
+  .row
+    for test in tests
+      .col-md-6
+        h2=test.name
+        p=test.description
+        p
+          a.btn.btn-raised(href='#', role='button') Continue »
